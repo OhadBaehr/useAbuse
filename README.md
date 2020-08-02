@@ -5,13 +5,13 @@ nice hack for replacing useState with something more similar to setState
 ## short guide:
 after copying the file to your project:
 
-```
+```js
 import {useAbuse} from './useAbuse'
 ```
 
 and can be later used as follows inside a functional component:
 
-```
+```js
 const [state,setState]=useAbuse({value:12, hasFinished:true, counter:2})
 
 setState({counter:8})
