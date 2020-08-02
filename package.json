@@ -1,6 +1,6 @@
 {
     "name": "use-abuse",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "useState alternative for functional components",
     "license": "The Unlicense",
     "repository": "OhadBaehr/useAbuse",
