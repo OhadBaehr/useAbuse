@@ -9,7 +9,7 @@ import {useAbuse} from 'use-abuse'
 
 ## usage:
 ```js
-const [state,setState]=useAbuse({value:12, hasFinished:true, counter:2})
+const [state,setState]=useAbuse({value:12, visible:true, counter:2})
 
 setState({counter:8})
 setState(prev => ({value: prev.value +5}))// value is now 17
