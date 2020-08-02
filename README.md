@@ -24,10 +24,10 @@ import {useAbuse} from 'use-abuse'
 const Counter=()=>{
   const [state,setState]=useAbuse({data:0})
   return (
-    <div style={{background:"black",color:"white",fontSize:20,textAlign:"center",padding:20}}
+    <button style={{background:"black",width:"100%",color:"white",fontSize:20,textAlign:"center",padding:20}}
         onClick={()=>setState(prev=>({data:prev.data+1}))}>
         {state.data}
-    </div>
+    </button>
   );
 }
 
