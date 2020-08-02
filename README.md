@@ -1,22 +1,37 @@
 # useAbuse
-nice hack for replacing useState with something more similar to setState
+new hook that act like the original setState but built for functional components
 
 
-## short guide:
-after copying the file to your project:
-
+## import:
 ```js
-import {useAbuse} from './useAbuse'
+import {useAbuse} from 'use-abuse'
 ```
 
-and can be later used as follows inside a functional component:
-
+## usage:
 ```js
 const [state,setState]=useAbuse({value:12, hasFinished:true, counter:2})
 
 setState({counter:8})
 setState(prev => ({value: prev.value +5}))// value is now 17
 setState({value:2,counter:10})
+```
+
+## example component:
+```js
+import React from 'react';
+import {useAbuse} from 'use-abuse'
+
+const Counter=()=>{
+  const [state,setState]=useAbuse({data:0})
+  return (
+    <div style={{background:"black",color:"white",fontSize:20,textAlign:"center",padding:20}}
+        onClick={()=>setState(prev=>({data:prev.data+1}))}>
+        {state.data}
+    </div>
+  );
+}
+
+export default Counter;
 ```
 
 ## license:
