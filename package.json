@@ -1,6 +1,6 @@
 {
     "name": "use-abuse",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "useState alternative for functional components",
     "license": "The Unlicense",
     "repository": "OhadBaehr/useAbuse",
@@ -9,7 +9,9 @@
     "tiny",
     "npm",
     "package",
-    "useAbuse"
+    "useAbuse",
+    "react",
+    "hooks"
   ],"dependencies": {
     "react": "^16.8"
   }
