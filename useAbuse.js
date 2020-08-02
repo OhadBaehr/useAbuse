@@ -4,5 +4,6 @@ const abuseReducer = (state, action) => ({
     ...(typeof action === "function" ? action(state) : action)
 })
 //  const [state,setState]=useAbuse({loading:12, hasFinished:1, visible:2})
+//  setState({visible:8})
 //  setState(prev => ({loading: prev.loading +5}))
 export const useAbuse = (initialState) => useReducer(abuseReducer, initialState)
