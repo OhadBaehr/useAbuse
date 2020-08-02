@@ -15,7 +15,7 @@ and can be later used as follows inside a functional component:
 const [state,setState]=useAbuse({value:12, hasFinished:true, counter:2})
 
 setState({counter:8})
-setState(prev => ({value: prev.value +5}))
+setState(prev => ({value: prev.value +5}))// value is now 17
 setState({value:2,counter:10})
 ```
 
