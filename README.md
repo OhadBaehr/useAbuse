@@ -9,26 +9,26 @@ import {useAbuse} from 'use-abuse'
 
 ## usage:
 ```js
-const [state,setState]=useAbuse({value:12, visible:true, counter:2})
+const [state, setState] = useAbuse({ name: "larry" , visible: true, counter: 1 })
 
-setState({counter:8})
-setState(prev => ({value: prev.value +5}))// value is now 17
-setState({value:2,counter:10})
+setState({ visible: false })
+setState(prev => ({ counter: prev.counter + 1 }))//based on previous value
+setState({ name: "beans", counter: 12 , visible: true})//multiple 
 ```
 
 ## example component:
 ```js
 import React from 'react';
-import {useAbuse} from 'use-abuse'
+import { useAbuse } from 'use-abuse'
 
-const Counter=()=>{
-  const [state,setState]=useAbuse({data:0})
-  return (
-    <button style={{background:"black",width:"100%",color:"white",fontSize:20,textAlign:"center",padding:20}}
-        onClick={()=>setState(prev=>({data:prev.data+1}))}>
-        {state.data}
-    </button>
-  );
+const Counter = () => {
+    const [state, setState] = useAbuse({ data: 0 })
+    return (
+        <button style={{ background: "black", width: "100%", color: "white", fontSize: 20, textAlign: "center", padding: 20 }}
+            onClick={() => setState(prev => ({ data: prev.data + 1 }))}>
+            {state.data}
+        </button>
+    );
 }
 
 export default Counter;
