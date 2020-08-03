@@ -22,11 +22,11 @@ import React from 'react';
 import { useAbuse } from 'use-abuse'
 
 const Counter = () => {
-    const [state, setState] = useAbuse({ data: 0 })
+    const [state, setState] = useAbuse({ counter: 0 })
     return (
         <button style={{ background: "black", width: "100%", color: "white", fontSize: 20, textAlign: "center", padding: 20 }}
-            onClick={() => setState(prev => ({ data: prev.data + 1 }))}>
-            {state.data}
+            onClick={() => setState(prev => ({ counter: prev.counter + 1 }))}>
+            {state.counter}
         </button>
     );
 }
