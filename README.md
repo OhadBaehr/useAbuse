@@ -1,7 +1,7 @@
 # useAbuse
 new hook that act like the original setState but built for functional components
 
-## visit the project npm page
+## npm
 https://www.npmjs.com/package/use-abuse
 
 ## install:
