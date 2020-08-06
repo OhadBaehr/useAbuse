@@ -1,6 +1,10 @@
 # useAbuse
 new hook that act like the original setState but built for functional components
 
+## install:
+```js
+npm i 'use-abuse'
+```
 
 ## import:
 ```js
